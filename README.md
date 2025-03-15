@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-=======
 ## Java OOP Snacks 2
+
 Snack 1: Contatore di Auto
  
 Crea una classe Auto con:
@@ -23,4 +22,3 @@ Crea una classe ConvertitoreValute che contenga un array di tassi di cambio (es.
 Implementa un metodo static double converti(String da, String a, double importo), che accetta la valuta di partenza, quella di destinazione e l'importo da convertire, restituendo il valore convertito.
 
 Il programma deve accettare input dall’utente (valuta di partenza, valuta di destinazione, importo) e restituire l’importo convertito.
->>>>>>> fe1cbe4dff2f366fb9898b5a0c64e1a637d468a7

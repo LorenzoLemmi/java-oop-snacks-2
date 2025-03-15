@@ -1,18 +1,21 @@
-## Getting Started
+## Java OOP Snacks 2
+Snack 1:
+	Contatore di Auto
+Crea una classe Auto con:
+- un numero di telaio (final int numeroTelaio) univoco assegnato automaticamente alla creazione
+- una variabile static int contatoreAuto per tenere traccia del numero totale di auto create
+- un modello (final String modello) assegnato al momento della creazione e non modificabile
+  
+Ogni volta che viene creata una nuova Auto, il contatore deve aumentare e il numero di telaio deve essere assegnato in modo incrementale.
+Implementa un metodo static int getNumeroTotaleAuto() che restituisca il numero totale di auto create.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Scrivi un programma che:
+- crei alcune auto e stampi il loro numero di telaio e modello
+- stampi il numero totale di auto create
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+  
+Snack 2:
+	Sistema di Conversione Valute
+Crea una classe ConvertitoreValute che contenga un array di tassi di cambio (es. da EUR a USD, GBP, JPY...) dichiarato come final static per impedire modifiche.
+Implementa un metodo static double converti(String da, String a, double importo), che accetta la valuta di partenza, quella di destinazione e l'importo da convertire, restituendo il valore convertito.
+Il programma deve accettare input dall’utente (valuta di partenza, valuta di destinazione, importo) e restituire l’importo convertito.

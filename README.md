@@ -1,6 +1,6 @@
 ## Java OOP Snacks 2
-Snack 1:
-	Contatore di Auto
+Snack 1: Contatore di Auto
+ 
 Crea una classe Auto con:
 - un numero di telaio (final int numeroTelaio) univoco assegnato automaticamente alla creazione
 - una variabile static int contatoreAuto per tenere traccia del numero totale di auto create
@@ -14,8 +14,7 @@ Scrivi un programma che:
 - stampi il numero totale di auto create
 
   
-Snack 2:
-	Sistema di Conversione Valute
+Snack 2: Sistema di Conversione Valute
  
 Crea una classe ConvertitoreValute che contenga un array di tassi di cambio (es. da EUR a USD, GBP, JPY...) dichiarato come final static per impedire modifiche.
 

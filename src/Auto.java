@@ -15,15 +15,15 @@ Stampi il numero totale di auto create. */
 import java.util.Random;
 public class Auto {
 
-    private final int numeroDiTelaio;
+    private final int NUMERO_DI_TELAIO;
     private static int contatoreAuto = 0;
-    private final String modello;
+    private final String MODELLO;
     private static int nextNumeroDitelaio = 0;
 
     public Auto(String modello) {
 
-        this.numeroDiTelaio = generaNumeroDiTelaio();
-        this.modello = modello;
+        this.NUMERO_DI_TELAIO = generaNumeroDiTelaio();
+        this.MODELLO = modello;
         contatoreAuto++;
     
     }
@@ -40,15 +40,15 @@ public class Auto {
         return nextNumeroDitelaio;
         }
         return nextNumeroDitelaio++;
-        
+
     }
 
     public int getNumeroDiTelaio() {
-        return numeroDiTelaio;
+        return NUMERO_DI_TELAIO;
     }
 
     public String getModello() {
-        return modello;
+        return MODELLO;
     }
    
 }

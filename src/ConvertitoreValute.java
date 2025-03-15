@@ -10,5 +10,37 @@ importo) e restituire l’importo convertito. */
 
 public class ConvertitoreValute {
 
-    private final static double [] tassiDiCambio = {}
+    private final static double [] TASSI_DI_CAMBIO = {
+        1.0, // EUR -> EUR
+        1.12, // EUR -> USD
+        0.86, // EUR -> GBP
+        130.0, // EUR -> JPY
+    };
+
+    private final static String[] VALUTE = {
+        "EUR", "USD", "GBP", "JPY"
+    };
+
+    private static double getTasso(String valuta) {
+        
+        for (int i = 0; i < VALUTE.length; i++) {
+            if (VALUTE[i].equals(valuta)) {
+                return TASSI_DI_CAMBIO[i];
+            }
+        }
+        return -1;
+    }
+
+    public static double converti (String da, String a, double importo) {
+        double tassoDa = getTasso(da);
+        double tassoA = getTasso(a);
+
+        if (tassoDa == -1 || tassoA == -1) {
+            System.out.println("Errore: Valuta non supportata.");
+            return -1;
+        }
+
+        return ((importo / tassoDa) * tassoA);
+    }
+
 }

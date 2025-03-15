@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class UsoDelleClassi {
 
     public static void main(String[] args) {
@@ -11,6 +13,23 @@ public class UsoDelleClassi {
         System.out.println("Auto 3: "+auto3.getModello()+" "+auto3.getNumeroDiTelaio());
 
         System.out.println("Numero totale di auto: "+Auto.getNumeroTotaleAuto());
+
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci la valuta di partenza (EUR, USD, GBP, JPY): ");
+        String da = scanner.next().toUpperCase();
+
+        System.out.print("Inserisci la valuta di destinazione (EUR, USD, GBP, JPY): ");
+        String a = scanner.next().toUpperCase();
+
+        System.out.print("Inserisci l'importo da convertire: ");
+        double importo = scanner.nextDouble();
+
+        double risultato = ConvertitoreValute.converti(da, a, importo);
+        System.out.println("Importo convertito: " + risultato);
+
+        scanner.close();
 
     }
 }
